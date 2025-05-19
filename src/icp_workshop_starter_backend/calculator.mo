@@ -1,20 +1,20 @@
 actor {
-  public func add(x : Int, y : Int) : async Int {
-    return x + y;
+  public func add(num1 : Int, num2 : Int) : async Int {
+    return num1 + num2;
   };
 
-  public func subtract(x : Int, y : Int) : async Int {
-    return x - y;
+  public func subtract(num1 : Int, num2 : Int) : async Int {
+    return num1 - num2;
   };
 
-  public func multiply(x : Int, y : Int) : async Int {
-    return x * y;
+  public func multiply(num1 : Int, num2 : Int) : async Int {
+    return num1 * num2;
   };
 
-  public func divide(x : Int, y : Int) : async ?Int {
-    if (y == 0) {
+  public func divide(num1 : Int, num2 : Int) : async ?Int {
+    if (num2 == 0) {
       return null;
     };
-    return ?(x / y);
+    return ?(num1 / num2);
   };
 };
